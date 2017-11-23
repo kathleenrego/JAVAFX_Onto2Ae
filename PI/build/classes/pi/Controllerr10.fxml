@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pi.Controllerr10Controller">
+   <children>
+      <Pane prefHeight="394.0" prefWidth="600.0">
+         <children>
+            <PieChart fx:id="piechart" layoutX="87.0" layoutY="30.0" prefHeight="297.0" prefWidth="427.0" />
+            <Label fx:id="labelResultado" layoutX="255.0" layoutY="351.0" text="Label" />
+            <Button fx:id="botaoAparecer" layoutX="257.0" layoutY="197.0" mnemonicParsing="false" onAction="#AparecerGrafico" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela5Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="339.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fotos/painelOlhosVer.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoVoltarPainel5" layoutX="22.0" layoutY="306.0" mnemonicParsing="false" onAction="#goToScreen7" prefHeight="62.0" prefWidth="189.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/voltar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="botaoProximoPainel5" layoutX="388.0" layoutY="302.0" mnemonicParsing="false" onAction="#goToScreen9" prefHeight="69.0" prefWidth="208.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/proximo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <RadioButton fx:id="opcaoMuitaIrritacaoOlho" layoutX="117.0" layoutY="178.0" mnemonicParsing="false" onAction="#ComIrritacao" selected="true" text="Muita Irritação">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoIntensidade" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="opcaoPoucaIrritacaoOlho" layoutX="119.0" layoutY="221.0" mnemonicParsing="false" onAction="#ComIrritacao" text="Pouca Irritação" toggleGroup="$grupoIntensidade">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoconjutivite" layoutX="323.0" layoutY="178.0" mnemonicParsing="false" selected="true" text="paciente com Conjutivite">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="124.0" layoutY="124.0" text="O paciente apresenta irritação nos olhos?">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoDorNosOlhos" layoutX="323.0" layoutY="221.0" mnemonicParsing="false" text="Dor atrás dos Olhos">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoSemIrrita" layoutX="118.0" layoutY="262.0" mnemonicParsing="false" onAction="#SemIrritacao" text="Sem Irritação" toggleGroup="$grupoIntensidade">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Separator layoutX="286.0" layoutY="181.0" orientation="VERTICAL" prefHeight="221.0" prefWidth="5.0" style="-fx-background-color: gray;" />
+            <Label layoutX="256.0" layoutY="148.0" text="(Pode marcar mais de uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

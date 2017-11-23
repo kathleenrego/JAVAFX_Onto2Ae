@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela8Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="347.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fotos/painelFraqueza.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoVoltarPainel88" layoutX="14.0" layoutY="318.0" mnemonicParsing="false" onAction="#goToScreen9" prefHeight="59.0" prefWidth="191.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/voltar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="botaoProximoPainel8" layoutX="386.0" layoutY="314.0" mnemonicParsing="false" onAction="#goToScreen11" prefHeight="68.0" prefWidth="207.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/proximo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <RadioButton fx:id="opcaoSonolencia" layoutX="110.0" layoutY="229.0" mnemonicParsing="false" text="Sonoência">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoCansaço" layoutX="110.0" layoutY="171.0" mnemonicParsing="false" text="Cansaço">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoTontura" layoutX="110.0" layoutY="200.0" mnemonicParsing="false" text="Tontura">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="110.0" layoutY="134.0" text="O paciente apresenta os sintomas de fraqueza?">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoDorDeCabeca" layoutX="110.0" layoutY="259.0" mnemonicParsing="false" text="Dor de cabeça">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoSemSintomasFraqueza" layoutX="110.0" layoutY="288.0" mnemonicParsing="false" onAction="#SemFraqueza" text="Não apresenta nenhum dos sintomas">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="284.0" layoutY="156.0" text="(Pode marcar mais de uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoLimpar" layoutX="389.0" layoutY="191.0" mnemonicParsing="false" onAction="#LimparMarcacoes" text="* limpar marcações">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

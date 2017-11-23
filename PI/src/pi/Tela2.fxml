@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela2Controller">
+   <children>
+      <Pane layoutX="7.0" prefHeight="400.0" prefWidth="593.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fotos/manchasvermeNAPELE.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoProximoPainel3" layoutX="374.0" layoutY="313.0" mnemonicParsing="false" onAction="#goToScreen4" prefHeight="66.0" prefWidth="205.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/proximo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="botaoVoltarPainel3" layoutX="24.0" layoutY="318.0" mnemonicParsing="false" onAction="#goToScreen2" prefHeight="56.0" prefWidth="189.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/voltar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Label layoutX="101.0" layoutY="132.0" text="O paciente apresenta manchas na pele?">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoManchaMuitoIntensa" layoutX="101.0" layoutY="200.0" mnemonicParsing="false" onAction="#ComMancha" selected="true" text="Manchas Intensas">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoIntensidade" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="opcaoManchasLeves" layoutX="101.0" layoutY="238.0" mnemonicParsing="false" onAction="#ComMancha" text="Manchas Leves" toggleGroup="$grupoIntensidade">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoManchaPescoco" layoutX="297.0" layoutY="200.0" mnemonicParsing="false" selected="true" text="Manchas na área do pescoço">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoArea" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="opcaoinchaco" layoutX="299.0" layoutY="238.0" mnemonicParsing="false" text="Manchas com inchaço" toggleGroup="$grupoArea">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="205.0" layoutY="152.0" text="(Pode marcar mais de uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoSemManchas" layoutX="102.0" layoutY="276.0" mnemonicParsing="false" onAction="#SemMancha" text="Sem manchas" toggleGroup="$grupoIntensidade">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Separator layoutX="268.0" layoutY="202.0" orientation="VERTICAL" prefHeight="193.0" prefWidth="1.0" style="-fx-background-color: gray;" />
+         </children></Pane>
+   </children>
+</AnchorPane>

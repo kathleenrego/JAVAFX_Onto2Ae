@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.TelaInicialController">
+   <children>
+      <Pane fx:id="painelInicial" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0">
+               <image>
+                  <Image url="@fotos/12631214_942180942535576_1245736809_o.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoIniciar" layoutX="131.0" layoutY="292.0" mnemonicParsing="false" onAction="#goToScreen2" prefHeight="88.0" prefWidth="239.0" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="76.0" fitWidth="235.0">
+                     <image>
+                        <Image url="@fotos/botãoIniciar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

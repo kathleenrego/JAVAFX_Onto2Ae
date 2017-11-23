@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela3Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="418.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fotos/painelDorMuscular.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoVoltarPainel3" layoutX="23.0" layoutY="320.0" mnemonicParsing="false" onAction="#goToScreen4" prefHeight="61.0" prefWidth="184.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/voltar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="botaoProximoPainel3" layoutX="388.0" layoutY="316.0" mnemonicParsing="false" onAction="#goToScreen6" prefHeight="70.0" prefWidth="205.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/proximo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <RadioButton fx:id="opcaoDorAbdominal" layoutX="124.0" layoutY="200.0" mnemonicParsing="false" text="Dor abdominal">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupodormuscular" />
+               </toggleGroup>
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="130.0" layoutY="147.0" text="O paciente apresenta dores musculares?">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opcaoDormuscularOutrosLocais" layoutX="124.0" layoutY="235.0" mnemonicParsing="false" text="Dor muscular em outros locais" toggleGroup="$grupodormuscular">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="SemDorMuscular" layoutX="124.0" layoutY="271.0" mnemonicParsing="false" text="Sem dor muscular" toggleGroup="$grupodormuscular">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="247.0" layoutY="169.0" text="(Pode marcar mais de uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

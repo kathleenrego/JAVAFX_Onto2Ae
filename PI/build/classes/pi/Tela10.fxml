@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela10Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <PieChart fx:id="piechart" layoutX="50.0" prefHeight="322.0" prefWidth="500.0">
+               <effect>
+                  <ColorInput />
+               </effect>
+            </PieChart>
+            <Button fx:id="botaoAparecer" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#AparecerGrafico" text="Button" />
+            <Label fx:id="labelResultado" layoutX="106.0" layoutY="344.0" prefHeight="49.0" prefWidth="341.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

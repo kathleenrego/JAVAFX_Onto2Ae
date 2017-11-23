@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pi.Tela7Controller">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fotos/PainelSangramento.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoVoltarPainel7" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToScreen6" prefHeight="59.0" prefWidth="191.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/voltar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button fx:id="botaoProximoPainel7" layoutX="385.0" layoutY="304.0" mnemonicParsing="false" onAction="#goToScreen8" prefHeight="67.0" prefWidth="201.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/Noemi/Documents/NetBeansProjects/PI/src/pi/fotos/proximo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <RadioButton fx:id="opcaoTemSangramento" layoutX="46.0" layoutY="191.0" mnemonicParsing="false" onAction="#ComSangramento" selected="true" text="Apresenta sangramento">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoSangramento" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="opcaoNaoTemSangramento" layoutX="38.0" layoutY="241.0" mnemonicParsing="false" onAction="#SemSangramento" text="Não apresenta sangramento" toggleGroup="$grupoSangramento">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="29.0" layoutY="147.0" prefHeight="22.0" prefWidth="525.0" text="O paciente apresenta sangramento ?">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="369.0" layoutY="147.0" prefHeight="22.0" prefWidth="525.0" text="Se sim, em qual o local?">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="345.0" layoutY="91.0" orientation="VERTICAL" prefHeight="319.0" prefWidth="3.0" style="-fx-background-color: gray;" />
+            <RadioButton fx:id="opcaoTemSangramentoOuvido" layoutX="368.0" layoutY="191.0" mnemonicParsing="false" selected="true" text="Ouvido">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoTemSangramentoGengiva" layoutX="369.0" layoutY="225.0" mnemonicParsing="false" text="Gengiva">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opcaoTemSangramentoNariz" layoutX="369.0" layoutY="260.0" mnemonicParsing="false" text="Nariz">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="125.0" layoutY="169.0" text="(Pode marcar apenas uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="365.0" layoutY="169.0" text="(Pode marcar mais de uma opção)">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
